@@ -18,7 +18,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 64px; */
   color: #fff;
 }
 
@@ -53,4 +52,26 @@ a {
 #search {
   margin: 0 auto;
   display: inline-block;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .coin-input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Responsive styles for screens larger than 768px */
+@media (min-width: 768px) {
+  .coin-search {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .coin-input {
+    margin-right: 16px;
+    max-width: 400px;
+  }
 }

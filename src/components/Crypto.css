@@ -1,114 +1,155 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-/* *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-} */
+/* Add a mobile-first media query */
+@media only screen and (max-width: 600px) {
+  .coin-name {
+    font-size: 50px;
+  }
 
-main{
-    min-height: 100vh;
-    font-family: 'Exo', sans-serif;
-    background-color: #4e54c8;
-    color: #fff;
+  .img {
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .list {
+    font-size: 20px;
+  }
+
+  .list-red {
+    font-size: 20px;
+  }
+
+  .list-green {
+    font-size: 20px;
+  }
+
+  .area {
+    height: auto;
+  }
+
+  .circles li {
+    display: none;
+  }
+}
+
+/* Add a media query for larger screens */
+@media only screen and (min-width: 601px) {
+  .coin-name {
+    font-size: 100px;
+  }
+
+  .img {
+    width: 150px;
+    border-radius: 150px;
+  }
+
+  .list {
+    font-size: 30px;
+  }
+
+  .list-red {
+    font-size: 30px;
+  }
+
+  .list-green {
+    font-size: 30px;
+  }
+
+  .area {
+    height: 100vh;
+  }
+
+  .circles li {
+    display: block;
+  }
+}
+
+/* General styles that apply to all screens */
+main {
+  min-height: 100vh;
+  font-family: 'Exo', sans-serif;
+  background-color: #4e54c8;
+  color: #fff;
 }
 
 .coin-name {
-    font-size: 100px;
-    font-family: 'Times New Roman', serif;
-    color: black;
-}
-
-.img {
-    width: 150px;
-    border-radius: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-family: 'Times New Roman', serif;
+  color: black;
 }
 
 .context {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .list {
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    font-family: URW Chancery;
+  /* text-align: center; */
+  color: #fff;
+  font-family: URW Chancery;
 }
 
 .list-red {
-    text-align: center;
-    color: #f00606;
-    font-size: 30px;
-    font-family: URW Chancery;
+  /* text-align: center; */
+  color: #f00606;
+  font-family: URW Chancery;
 }
-
 
 .list-green {
-    text-align: center;
-    color: #11d811;
-    font-size: 30px;
-    font-family: URW Chancery;
+  /* text-align: center; */
+  color: #11d811;
+  font-family: URW Chancery;
 }
 
-
-.area{
-    background: #4e54c8;  
-     background: -webkit-linear-gradient(to left, #9b4aec, #3b7efa);  
-    width: 100%;
-    height:100vh;
-    
-   
+.area {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #9b4aec, #3b7efa);
+  width: 100%;
 }
 
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
 }
 
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
 }
 
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
 }
 
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
 }
+
 
 .circles li:nth-child(4){
     left: 40%;
