@@ -70,9 +70,7 @@ main {
   font-family: 'Exo', sans-serif;
   background-color: #4e54c8;
   color: #fff;
-  margin: 0;
-  height: 100%; 
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .coin-name {
